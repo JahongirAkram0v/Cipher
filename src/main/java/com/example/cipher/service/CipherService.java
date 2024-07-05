@@ -40,7 +40,7 @@ public class CipherService {
         StringBuilder newText = new StringBuilder();
         for (char a : text.toCharArray()) {
             int[] temp = findIndex(a);
-            newText.append(temp == null ? a : alphabet[temp[1]][alphabet.length - 1 - temp[0]]);
+            newText.append(temp == null ? a : alphabet[temp[1]][alphabet.length -  - temp[0]]);
         }
         return newText.toString();
     }
